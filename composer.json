@@ -1,0 +1,20 @@
+{
+    "name": "naugrim/laravel-strict-config-helper",
+    "description": "Ensures your config returns the correct types",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Erik Anders",
+            "email": "5753604+Naugrimm@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "files": [
+            "src/laravel-strict-config-helper.php"
+        ]
+    }
+}
