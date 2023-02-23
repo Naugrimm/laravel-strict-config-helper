@@ -1,6 +1,7 @@
 {
     "name": "naugrim/laravel-strict-config-helper",
     "description": "Ensures your config returns the correct types",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
