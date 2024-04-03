@@ -59,3 +59,26 @@ config_float(string $key, ?float $default = null): float
 config_numeric(string $key, int | float | null $default = null): int | float
 config_bool(string $key, ?bool $default = null): bool
 ```
+
+### IDE config key autocompletion
+
+If you are using the awesome Laravel IDEA plugin for PHPStorm, you can create a file named `ide.json` in
+your project with the following content to have autocompletion of the config keys:
+
+```json
+{
+  "$schema": "https://laravel-ide.com/schema/laravel-ide-v2.json",
+  "completions": [
+    {
+      "complete": "configKey",
+      "condition": [
+        {
+          "functionNames": ["config_bool", "config_float", "config_int", "config_numeric", "config_string"],
+          "parameters": [1]
+        }
+      ]
+    }
+  ]
+}
+
+```
