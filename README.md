@@ -1,5 +1,14 @@
 # Laravel Strict Config Helper
 
+## Deprecation Notice
+
+As Laravel 11+ supports using the `Config`-facade for the exact same purpose, this package will
+not be maintained anymore.
+
+Note though, that Laravel currently does not have an equivalent to the `config_numeric` function in this package.
+
+## Usage
+
 This package is mainly intended to work together with [PHPStan](https://phpstan.org/).
 
 Laravel's helper `config($key, $default)` returns `mixed`. In higher PHPStan levels, you cannot perform
